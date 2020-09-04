@@ -1,0 +1,32 @@
+
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+.header-img {
+    width:100%;
+    min-height:350px;
+    max-height:640px;
+}
+
+.logo {
+    width: 32px;
+}
+
+
+
+#instalaciones {
+    height: 90vh;
+    margin: 30px
+}
+
+#pricing {
+    height: 90vh;
+    margin: 30px    
+}
+
+#contact {
+    height: 90vh;
+    margin-top: 40px;   
+}
