@@ -13,6 +13,9 @@
     <!--ICONS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/img/logo (2).png" type="image/x-icon">    
+    <!--Animated-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"/>
 </head>
 
 <body id="myPage">
@@ -36,7 +39,7 @@
         <div class="w3-bar w3-theme-d2 w3-left-align">
             <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
                 href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-            <a href="#" class="w3-bar-item w3-button w3-pink"><i class="fa fa-home w3-margin-right"></i> <img class="logo" src="assets/img/logo (2).png" alt="logo"> AquaFun</a>
+            <a href="#" class="w3-bar-item w3-button w3-pink"><img class="logo" src="assets/img/logo (2).png" alt="logo"> AquaFun</a>
             <a href="#instalaciones" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Instalaciones</a>
             <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Nuestro Trabajo</a>
             <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Entradas disponibles</a>
@@ -54,10 +57,11 @@
 
     <!-- Image Header -->
     <div class="w3-display-container w3-animate-opacity">
-        <img class="header-img" src="assets/img/header.png" alt="boat">
-        <div class="w3-container w3-display-bottomleft w3-margin-bottom">
+        <img class="header-img" src="assets/img/header.gif" alt="header-img">
+        <div class="w3-container w3-display-bottomleft w3-margin-bottom" id="logo-container">
+            <img class="logo-header slide-in-fwd-left" src="./assets/img/logo (2).png" id="logo-img" alt="logo">
             <button onclick="document.getElementById('id01').style.display='block'"
-                class="w3-button w3-xlarge w3-red w3-hover-pink w3-margin-bottom" title="Mira ¿Que es AquaFun?">Ver Video</button>
+                class="w3-button w3-xlarge w3-red w3-hover-pink w3-margin-bottom slide-in-fwd-left"  title="Mira ¿Que es AquaFun?">Ver Video</button>
         </div>
     </div>
 
@@ -70,7 +74,7 @@
                 <h5>Vive un dia lleno de adrenalina! <i class="fa fa-smile-o"></i></h5>
             </header>
             <div class="w3-container">
-                <iframe width="100%" height="415" frameborder="0" src="https://mega.nz/embed/TB9CFAga#khfasBQQ-oF3addFjJ5uk0wmxid9sySQ1GPpy1oPEbc!" allowfullscreen ></iframe>
+                <iframe width="100%" height="415" frameborder="0" src="https://mega.nz/embed/TB9CFAga#khfasBQQ-oF3addFjJ5uk0wmxid9sySQ1GPpy1oPEbc!&mute=1" allowfullscreen controls muted ></iframe>
             </div>
         </div>
     </div>
@@ -201,15 +205,21 @@
                 <li class="w3-theme">
                     <p class="w3-xlarge">Pool-Party</p>
                 </li>
-                <li class="w3-padding-16"><b>Comida</b></li>
-                <li class="w3-padding-16"><b>Estadia</b></li>
-                <li class="w3-padding-16"><b>Water Blow </b>(Nuestra atraccion exclusiva)</li>
-                <li class="w3-padding-16"><b>Cupon </b>(Canjeable el dia del evento)</li>
-                <li class="w3-padding-16">
-                    <h2 class="w3-wide"><i class="fa fa-usd"></i> 40</h2>
+                <li class="w3-padding-15"><b>Comida</b></li>
+                <li class="w3-padding-15"><b>Estadia</b></li>
+                <li class="w3-padding-15"><b>Water Blow </b>(Nuestra atraccion exclusiva)</li>
+                <li class="w3-padding-15"><b>Cupon </b>(Canjeable el dia del evento)</li>
+                <li class="w3-padding-15">
+                    <h2 class="w3-wide"><i class="fa fa-usd"></i> 45</h2>
                 </li>
                 <li class="w3-theme-l5 w3-padding-24">
-                    <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Buy Now</button>
+                    <button class="w3-button w3-red w3-padding-large"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="J557964D7SSBQ">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </button>
                 </li>
             </ul>
         </div>
@@ -219,15 +229,21 @@
                 <li class="w3-theme-l2">
                     <p class="w3-xlarge">Beach-Party</p>
                 </li>
-                <li class="w3-padding-16"><b>Comida</li>
-                <li class="w3-padding-16"><b>Estadia</li>
-                <li class="w3-padding-16"><b>Transporte</li>
-                <li class="w3-padding-16"><b>Atraciones y Actividades.</li>
-                <li class="w3-padding-16">
+                <li class="w3-padding-15"><b>Comida</li>
+                <li class="w3-padding-15"><b>Estadia</li>
+                <li class="w3-padding-15"><b>Transporte</li>
+                <li class="w3-padding-15"><b>Atraciones y Actividades.</li>
+                <li class="w3-padding-15">
                     <h2 class="w3-wide"><i class="fa fa-usd"></i> 80</h2>
                 </li>
                 <li class="w3-theme-l5 w3-padding-24">
-                    <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Buy Now</button>
+                    <button class="w3-button w3-red w3-padding-large"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="66YLL9W4K5KE2">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </button>
                 </li>
             </ul>
         </div>
@@ -237,15 +253,21 @@
                 <li class="w3-theme">
                     <p class="w3-xlarge">Summer-Paradise</p>
                 </li>
-                <li class="w3-padding-16"><b>Alimentacion, tragos de cortezia, cupones.</b></li>
-                <li class="w3-padding-16"><b>Transporte, Actividades y Atraciones</li>
-                <li class="w3-padding-16"><b>Djs y AquaBar</li>
-                <li class="w3-padding-16"><b>AquaSouvenir</b></li>
-                <li class="w3-padding-16">
+                <li class="w3-padding-15"><b>Alimentacion, tragos de cortezia, cupones.</b></li>
+                <li class="w3-padding-15"><b>Transporte, Actividades y Atraciones</li>
+                <li class="w3-padding-15"><b>Djs y AquaBar</li>
+                <li class="w3-padding-15"><b>AquaSouvenir</b></li>
+                <li class="w3-padding-15">
                     <h2 class="w3-wide"><i class="fa fa-usd"></i> 95</h2>
                 </li>
                 <li class="w3-theme-l5 w3-padding-24">
-                    <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Buy Now</button>
+                    <button class="w3-button w3-red w3-padding-large"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="VA23DGLRUJY6E">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </button>
                 </li>
             </ul>
         </div>
@@ -262,22 +284,27 @@
                 <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  info@aquafuncr.com</p>
             </div>
             <div class="w3-col m7">
-                <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+                <div class="alert">Tu informacion ha sido enviada!</div>
+                <form id="contactForm" class="w3-container w3-card-4 w3-padding-16 w3-white">
                     <div class="w3-section">
-                        <label>Name</label>
-                        <input class="w3-input" type="text" name="Name" required>
+                        <label>Nombre</label>
+                        <input class="w3-input" id="name" type="text" name="Name" required>
                     </div>
                     <div class="w3-section">
-                        <label>Email</label>
-                        <input class="w3-input" type="text" name="Email" required>
+                        <label>E-mail</label>
+                        <input class="w3-input" id="email" type="text" name="Email" required>
                     </div>
                     <div class="w3-section">
-                        <label>Message</label>
-                        <input class="w3-input" type="text" name="Message" required>
+                        <label>Telefono</label>
+                        <input class="w3-input" id="phone" type="text" name="Phone Number" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Mensaje</label>
+                        <input class="w3-input" id="message" type="text" name="Message" required>
                     </div>
                     <input class="w3-check" type="checkbox" checked name="Like">
-                    <label>I Like it!</label>
-                    <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+                    <label>Me Gusta!</label>
+                    <button type="submit" class="w3-button w3-right w3-theme">Enviar</button>
                 </form>
             </div>
         </div>
@@ -296,8 +323,6 @@
                 class="fab fa-google-plus"></i></a>
         <a class="w3-button w3-large w3-red" href="javascript:void(0)" title="Google +"><i
                 class="fab fa-instagram"></i></a>
-        <a class="w3-button w3-large w3-red w3-hide-small" href="javascript:void(0)" title="Linkedin"><i
-                class="fab fa-linkedin"></i></a>
         <p>Jumper-Enterprise-Web Developing</p>
 
         <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
@@ -307,30 +332,12 @@
         </div>
     </footer>
 
-    <script>
-        // Script for side navigation
-        function w3_open() {
-            var x = document.getElementById("mySidebar");
-            x.style.width = "300px";
-            x.style.paddingTop = "10%";
-            x.style.display = "block";
-        }
-
-        // Close side navigation
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
-
-        // Used to toggle the menu on smaller screens when clicking on the menu button
-        function openNav() {
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-    </script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navigation-bar.js"></script>
 
 </body>
 
