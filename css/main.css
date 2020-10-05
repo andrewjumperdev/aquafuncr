@@ -15,13 +15,65 @@
 }
 
 .logo-header {
-    height: 300px;
+    height: 200px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
 
-#instalaciones {
-    height: 90vh;
-    margin: 30px
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  height: 200px;
+}
+
+.container-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-list {
+  margin: 30px;
+  padding: 40px;
+}
+
+.container-list h1 {
+  padding-top: 40px;
+}
+
+.container-list p {
+  padding: 40px;
+}
+
+.texto-info {
+  margin-left: 40px;
+  padding: 40px;
+}
+
+
+.container-card-img {
+  margin-top: 40px;
+}
+
+.container-card-img img {
+  padding: 20px;
+  width: 400px;
+  height: 500px;
+}
+
+
+.container-list {
+  width: 800px;
+  padding: 0%;
 }
 
 #pricing {
@@ -48,6 +100,15 @@
     }
     .logo-header {
         height: 100px;
+    }
+
+    .work-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .container-card {
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -111,4 +172,8 @@
     }
   }
   
-  
+  .alert {
+    text-align: center;
+    display: none;
+    margin: 5px;
+  }
